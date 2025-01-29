@@ -1,5 +1,6 @@
 const { MongoClient } = require("mongodb");
 const cleanDeep = require("clean-deep");
+const dotenv = require("dotenv");
 const {
   SQSClient,
   ReceiveMessageCommand,
@@ -13,14 +14,13 @@ const client = new MongoClient(mongoUri);
 
 // Configuración de SQS
 const sqsClient = new SQSClient({
-  region: "us-east-2",
+  region: process.env.region,
   credentials: {
-    accessKeyId: "AKIAYRH5NGQYUJJSLUGG",
-    secretAccessKey: "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",
+    accessKeyId: process.env.accessKeyId,
+    secretAccessKey: process.env.secretAccessKey,
   },
 });
-const queueUrl =
-  "https://sqs.us-east-2.amazonaws.com/586794480689/mi-sqs-gmg.fifo";
+const queueUrl = process.env.queueUrl;
 
 // Función para guardar mensajes en MongoDB
 const saveMessageToMongo = async (message) => {

@@ -1,17 +1,16 @@
 const { SQSClient, SendMessageCommand } = require("@aws-sdk/client-sqs");
-
+const dotenv = require("dotenv");
 // Configuración del cliente SQS
 const client = new SQSClient({
-  region: "us-east-2",
+  region: process.env.region,
   credentials: {
-    accessKeyId: "AKIAYRH5NGQYUJJSLUGG",
-    secretAccessKey: "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",
+    accessKeyId: process.env.accessKeyId,
+    secretAccessKey: process.env.secretAccessKey,
   },
 });
 
 // URL de la cola FIFO
-const queueUrl =
-  "https://sqs.us-east-2.amazonaws.com/586794480689/mi-sqs-gmg.fifo";
+const queueUrl = process.env.queueUrl;
 
 const sendMessage = async () => {
   try {
