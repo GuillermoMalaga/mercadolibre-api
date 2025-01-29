@@ -11,7 +11,7 @@ const {
 const mongoUri = "mongodb://186.64.123.207:27017/";
 const dbName = "gmg-ML"; // nombre de la base de datos
 const client = new MongoClient(mongoUri);
-
+dotenv.config();
 // Configuración de SQS
 const sqsClient = new SQSClient({
   region: process.env.region,
