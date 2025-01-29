@@ -13,9 +13,8 @@ async function sendMessageToSQS(messageBody, messageAttributes = {}) {
   // Credenciales (¡REEMPLAZA CON CREDENCIALES SEGURAS EN PRODUCCIÓN!)
   var accessKeyId = process.env.accessKeyId;
   var secretAccessKey = process.env.secretAccessKey;
-  const region = "us-east-1";
-  const queueUrl =
-    "https://sqs.us-east-1.amazonaws.com/457564458476/mgg-ml-webhook";
+  var region = process.env.region;
+  var queueUrl = process.env.queueUrl;
 
   // 1. Crear un objeto SQS
   const sqs = new AWS.SQS({

@@ -1,8 +1,3 @@
-2025-01-13T06:54:53.756Z - {"saludo":"guillermo2222","CLIENT_ID":69365374560767}
-2025-01-13T17:07:51.211Z - {"saludo":"guillermo3333","CLIENT_ID":69365374560767}
-2025-01-14T00:32:53.344Z - {"saludo":"marcelo","CLIENT_ID":69365374560767}
-2025-01-15T20:25:53.930Z - {"saludo":"Jose","CLIENT_ID":69365374560767}
-2025-01-17T04:52:09.649Z - {"saludo":"Jose","CLIENT_ID":69365374560767}
 2025-01-17T05:16:42.725Z - {"id":"33c376ea-7a47-416f-b53c-7eb755464b99","topic":"questions","resource":"/questions/13254203614","user_id":2180141137,"application_id":69365374560767,"sent":"2025-01-17T00:29:07.645Z","attempts":1,"received":"2025-01-17T00:29:07.588Z","actions":[]}
 2025-01-17T05:23:28.885Z - {"id":"33c376ea-7a47-416f-b53c-7eb755464b99","topic":"questions","resource":"/questions/13254203614","user_id":2180141137,"application_id":69365374560767,"sent":"2025-01-17T00:29:07.645Z","attempts":1,"received":"2025-01-17T00:29:07.588Z","actions":[]}
 2025-01-17T06:44:15.947Z - {"id":"33c376ea-7a47-416f-b53c-7eb755464b990000","topic":"questions","resource":"/questions/13254203614","user_id":2180141137,"application_id":69365374560767,"sent":"2025-01-17T00:29:07.645Z","attempts":1,"received":"2025-01-17T02:44:07.588Z","actions":[]}

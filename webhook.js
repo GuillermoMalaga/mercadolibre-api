@@ -155,7 +155,7 @@ app.get("/notifications", (req, res) => {
 
   res.send(html);
 });
-// Endpoint para recibir notificaciones de Mercado Libre
+// Endpoint para recibir notificaciones de Mercado Libre de gmg
 app.post("/webhook-gmg", (req, res) => {
   const notification = req.body;
   res.status(200).send("OK"); // Importante responder con un 200
